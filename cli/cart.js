@@ -56,6 +56,7 @@ btns.forEach(btn => {
         asideElement.appendChild(imageElement)
         console.log(asideElement)
         console.log(imageElement)
+        console.log("hi im doing this for testing purposes")
     });
 });
 
