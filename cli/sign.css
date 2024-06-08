@@ -1,0 +1,86 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/736x/a9/20/56/a92056fdbad7a0b4ca4afbc0bb06f663.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    border: 5px solid #333;
+    background-color: white;
+    border-radius: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+#email1,
+#password1 {
+    width: 300px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#h1 {
+    text-align: center;
+}
+
+.brands {
+    border: black 3px solid;
+    margin-left: 21px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#signcontainer {
+    display: block;
+}
+
+#signin {
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #0ca0eb;
+    font-size: 20px;
+    color: white;
+}
+
+.line-container {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.line-container span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 10px;
+}
+
+#back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    z-index: 9999;
+
+}

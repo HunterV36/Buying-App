@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="cart.js"></script>
+</head>
+<body>
+    <div id="box">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-9">
+                    <div id="lavish">
+                        <a href="cart.html">
+                            <img id="cart" src="https://cdn4.iconfinder.com/data/icons/shopping-and-commerce-outline-color/512/shopping_commerce_16-512.png" height=70px width="70px" alt="shopping cart">
+                        </a>
+                        <a href="#" id="logo-link">
+                            <img id="logo" src="https://www.mylumens.com/images/pdt1/815202208181216456919.png" alt="">
+                        </a>
+                        <a href="index.html">
+                        <h1 id="brand">avish - Electronic and Game Store</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 text-right">
+                    <a href="signin.html"><img id="profile" src="https://api-private.atlassian.com/users/302978812ecb139864f8030aea59809b/avatar" alt="Profile"></a>
+                    <a href="signin.html"><h3 id="username">Guest</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-bottom">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gaming
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Keyboards/Mouses</a>
+                <a class="dropdown-item" href="headphonesmousep.html">Headphones/Mousepads</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Other Items</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Electronics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="monitv.html">Monitors/TV's</a>
+                <a class="dropdown-item" href="phipco.html">Phones/Ipads/Computers</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Other Items</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Others</a>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+
+
+    <div>
+    <h1 id="itemsincart">Your cart is empty</h1>
+    </div>
+
+    <div>
+        <h2 id="order">Order Summary</h2>
+        </div>
+        <hr>
+        <div id="itemstoadd">
+
+          <div id="pcdiv">
+        <img src="./PC.png" alt="pc" height="310px" width="250px" id="pc">
+        </div>
+
+           <div id="deskdiv">
+              <img src="./micke-desk-black-brown__0736019_pe740346_s5[1].png" alt="desk" height="300px" width="250px">
+           </div>
+
+           <div id="headphonesdiv">
+            <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/437/153669/fc0078efc5dd4e2b579dd153ea420bc4865818c9cfeab31652d4e20abdd9a3ee__47830.1707030105.png?c=2" alt="headphones" height="300px" width="250px">
+           </div>
+        </div>
+        <div id="btns">
+        <button id="btn1">Add to cart</button>
+        <button id="btn2">Add to cart</button>
+        <button id="btn3">Add to cart</button>
+        </div>
+    </body>
+</html>
