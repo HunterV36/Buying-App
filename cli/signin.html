@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign.css">
     <title>My Form</title>
-    <script src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="signin.js"></script>
 </head>
 <body>
     <a href="index.html">
@@ -13,9 +14,9 @@
     </a>
     <div class="form-container">
         <h1 id="h1">Sign In</h1>
-        <form>
-            <input type="email" id="email1" placeholder="Email">
-            <input type="password" id="password1" placeholder="Password">
+        <form id="loginForm">
+            <input type="email" id="email1" placeholder="Email" required>
+            <input type="password" id="password1" placeholder="Password" required>
             <div id="signcontainer">
             <button id="signin">Sign In</button>
         </div>
@@ -33,7 +34,40 @@
         </a>
         <a href="placeholder">
         <img src="./Screenshot 2024-02-22 181636.png" class="brands" alt="sign in with apple" height="50px" width="350px">
+    </a>    
+    <h3 id="dont">Don't have an account? <a href="signup.html"><span id="signup">Sign Up</span></a></h3>
     </div>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        const email = "goalie.hunter36@gmail.com"
+        const password = "JohnGibson36"
+        function signIn(eventObj) {
+            eventObj.preventDefault()
+            const email2 = $("#email1").val()
+            const password2 = $("#password1").val()
+            if (email2 === email && password2 === password) {
+                window.location.href = "index.html"
+                
+            } else {
+                alert("Wrong!")
+            }
+        }
+    $("#loginForm").submit(signIn)
+    })
+
+
+
+    </script>
+    
+
+
+
+
+    
 </body>
 </html>
 

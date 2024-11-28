@@ -20,13 +20,11 @@
 #profile {
     height: 60px;
     width: 60px;
-    margin-top: 20px;
-    margin-left: 275px;
+    margin-top: 20px;;
 }
 
 #username {
     margin-top: 5px;
-    margin-left: 265px;
     color: white;
     text-decoration: none;
 }
@@ -64,7 +62,7 @@
     border-radius: 5px;
     padding-bottom: 15px;
     padding-left: 10px;
-    margin-left: 100px;
+    margin-left: 115px;
     margin-top: 30px;
     display: inline-block;
 }
@@ -93,10 +91,9 @@
     border-radius: 5px;
     padding-bottom: 15px;
     padding-left: 10px;
-    margin-left: 100px;
     margin-top: 30px;
     display: inline-block;
-    margin-left: 180px;
+    margin-left: 100px;
 }
 
 #micke:hover {
@@ -158,7 +155,7 @@ aside {
     font-weight: 600;
     font-style: normal;
     font-size: 30px;
-    margin-left: 70px;
+    margin-left: 50px;
     color: #104497;
 }
 
@@ -177,7 +174,7 @@ aside {
     font-weight: 600;
     font-style: normal;
     font-size: 30px;
-    margin-left: 70px;
+    margin-left: 40px;
     color: #104497
 }
 
@@ -207,4 +204,32 @@ aside {
 
 #item-container {
     margin-left:40px;
+}
+
+#checkout {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:30px;
+    background-color: #32a0a8;
+    width: 250px;
+    height: 50px;
+    color:white;
+    border-radius: 15px;
+    margin-left: 50px;
+    box-shadow: 15px 10px 10px rgb(145, 135, 135);
+}
+
+#checkout:hover {
+    background-color: #28868d;
+}
+
+#openClose {
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius:50px;
+}
+
+#openClose:hover {
+    cursor:pointer;
 }

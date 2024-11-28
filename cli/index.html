@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&display=swap" rel="stylesheet">  
     <script defer src="cart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div id="container">
@@ -49,7 +53,7 @@
                         Gaming
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownGaming">
-                        <a class="dropdown-item" href="#" id="kbm-link">Keyboards/Mouses</a>
+                        <a class="dropdown-item" href="kbm.html" id="kbm-link">Keyboards/Mouses</a>
                         <a class="dropdown-item" href="headphonesmousep.html">Headphones/Mousepads</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Other Items</a>
@@ -80,7 +84,7 @@
                 <div id="pwrpc">
                     <a href="newfile.html">
                         <img id="powerpc" src="ppcbtn.png" alt="PC">
-                        <p class="color">iBUYPOWER Gaming PC Computer Desktop Element 9260 (Intel Core i7-9700F 3.0Ghz, NVIDIA GeForce GTX 1660 Ti 6GB, 16GB DDR4, 240GB SSD, 1TB HDD, Wi-Fi & Windows 10 Home) Black</p>
+                        <p class="color" id="detailsPc">iBUYPOWER Gaming PC Computer Desktop Element 9260 (Intel Core i7-9700F 3.0Ghz, NVIDIA GeForce GTX 1660 Ti 6GB, 16GB DDR4, 240GB SSD, 1TB HDD, Wi-Fi & Windows 10 Home) Black</p>
                     </a>
                     <div class="Box">
                         <button type="button" class="btn btn-primary more-info-btn">More Info</button>
@@ -91,7 +95,7 @@
                 <div id="micke">
                     <a href="newfile.html">
                         <img class="micke" src="mickebtn.png" alt="Desk">
-                        <p class="color">MICKE Desk, black-brown, 41 3/8x19 5/8" Comes with drawers, wire hole, great wood, and many other features!</p>
+                        <p class="color" id="detailsMicke">MICKE Desk, black-brown, 41 3/8x19 5/8" Comes with drawers, wire hole, great wood, and many other features!</p>
                     </a>
                     <div class="Box">
                         <button type="button" class="btn btn-primary more-info-btn">More Info</button>
@@ -101,8 +105,8 @@
 
                 <div id="sony1">
                     <a href="newfile.html" target="_blank">
-                        <img id="sonyp" src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/437/153669/fc0078efc5dd4e2b579dd153ea420bc4865818c9cfeab31652d4e20abdd9a3ee__47830.1707030105.png?c=2" alt="Headphones">
-                        <p class="color">Sony - WHCH720N Wireless Noise Canceling Headphones - Black</p>
+                        <img id="sonyp" src="https://d1ncau8tqf99kp.cloudfront.net/converted/74739_original_local_1200x1050_v3_converted.webp" alt="Headphones">
+                        <p class="color" id="detailsSony">Sony - WHCH720N Wireless Noise Canceling Headphones - Black</p>
                     </a>
                     <div class="Box">
                         <button type="button" class="btn btn-primary more-info-btn">More Info</button>
@@ -111,32 +115,24 @@
                 </div>
             </div>
         </main>
+        <img id="openClose" src="https://www.svgrepo.com/show/135316/left-arrow.svg" alt="openClose" width="50px">
+
 
         <aside id="cartContainer">
             <img src="https://cdn1.iconfinder.com/data/icons/arrows-144/100/Artboard_10-512.png" height="40px" width="40px" id="close" alt="Close">
             <h1 id="summary">Order Summary</h1>
+            <a href="checkout.html">
+            <button id="checkout">Checkout</button>
+            </a>
             <hr id="separator">
             <h1 id="itemsincart">Your cart is empty</h1>
+            
+            <hr id="separator">
         </aside>
     </div>
 
-    <!-- Bootstrap JavaScript and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-      document.querySelector('#kbm-link').addEventListener("click", function(event) {
-          event.preventDefault(); // Prevent the default behavior of the link
-          window.location.href = "http://127.0.0.1:5500/cli/kbm.html"; // Redirect to kbm.html
-      });
-
-      // Add event listener to the guest image and text
-      document.querySelectorAll("#profile, #username").forEach(el => {
-          el.addEventListener("click", function() {
-              window.location.href = "signin.html"; // Redirect to signin.html
-          });
-      });
-    </script>
 </body>
 </html>
