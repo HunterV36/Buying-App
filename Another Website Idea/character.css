@@ -1,0 +1,54 @@
+html {
+    background-image: url("https://wallpapershome.com/images/pages/pic_h/5708.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#heading {
+    text-align: center;
+    color: white;
+    font-family: "Nerko One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+}
+
+#characters {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#ninja {
+    height: 500px;
+    width: 500px;
+}
+
+#tough {
+    height: 500px;
+    width: 500px;
+}
+
+#devil {
+    height: 500px;
+    width: 500px;
+}
+
+.choose {
+    display: block;
+    margin: 10px auto;
+    background-color: White;
+    font-size: 35px;
+    border-radius: 20px;
+    font-family: "Anton SC", sans-serif;
+    border: 5px solid white;
+}
+
+.choose:hover {
+    background-color: #909696;
+    cursor: pointer;
+}
+
+#hello {
+    color:white;
+}
