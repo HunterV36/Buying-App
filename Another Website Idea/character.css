@@ -10,7 +10,9 @@ html {
     font-family: "Nerko One", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 75px;
+    font-size: 100px;
+    height:50px;
+    margin-bottom: 125px;
 }
 
 #characters {
@@ -49,6 +51,28 @@ html {
     cursor: pointer;
 }
 
-#hello {
-    color:white;
+#watchOut {
+    color: white;
+    background-color: red;
+    border: 5px solid white;
+    border-radius: 15px;
+    font-size: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+#dialogue1 {
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 650px;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+#character1, #dialogue1 {
+    display:inline-block;
 }
