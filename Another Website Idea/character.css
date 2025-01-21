@@ -4,6 +4,8 @@ html {
     background-size: cover;
 }
 
+
+
 #heading {
     text-align: center;
     color: white;
@@ -59,6 +61,7 @@ html {
     font-size: 75px;
     height: 75px;
     text-align: center;
+    margin-top: 5px;
 }
 
 #dialogue1 {
@@ -75,4 +78,24 @@ html {
 
 #character1, #dialogue1 {
     display:inline-block;
+}
+
+#next1 {
+    padding: 25px;
+    margin-left: 90vw;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+#next1:hover {
+    cursor:pointer;
+}
+
+#tutorialText1 {
+    background-color: white;
 }

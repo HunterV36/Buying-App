@@ -13,7 +13,9 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="your-script.js"></script>
 </head>
-<aside>
+
+<body>
+    <aside id="choose">
     <h1 id="heading">Choose Your Character</h1>
     <div id="characters">
 
@@ -34,10 +36,17 @@
 
     </div>
 </aside>
-<body id="game">
-    <audio src=""></audio>
-    <h1 id="watchOut">Watch Out!</h1>
+
+    <div id="game">
+    <h1 id="watchOut">Welcome to Duel Madness</h1>
+    <button id="next1">Next</button>
     <span id="img1"></span>
     <h2 id="dialogue1"></h2>
+    </div>
+
+    <div id="tutorialPart1">
+        <h1 id="tutorialText1">For your first training, you will use your basic attack. Your basic attack is something that you will always have in battle and doesn't require energy. In order to do this basic attack, you will need to guess a random number between 1 and 2. Good luck!</h1>
+        <span id="tutorialImg1"></span>
+    </div>
 </body>
 </html>

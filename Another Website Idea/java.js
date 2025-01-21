@@ -6,7 +6,7 @@ const ninja = document.getElementById("ninjaButton");
 const tough = document.getElementById("toughButton");
 const devil = document.getElementById("devilButton");
 const choose = document.getElementsByClassName("choose");
-const game = document.getElementById("game");
+const next1 = document.getElementById("next1")
 
 const img1 = document.getElementById("img1");
 const dialogue1 = document.getElementById("dialogue1");
@@ -26,10 +26,36 @@ function typeWriter(element, text, speed) {
     type();
 }
 
-$(document).ready(function () {
-    $("body > *:not(aside)").hide();
+    $("body > *:not(#choose)").hide();
 
-    typeWriter(dialogue1, dialogueText, 35);
+
+Array.from(choose).forEach(button => {
+    button.addEventListener("click", function () {
+        if (this.id === "ninjaButton") {
+            characterSrc = ninjaImage.src;
+        } else if (this.id === "toughButton") {
+            characterSrc = toughImage.src;
+        } else if (this.id === "devilButton") {
+            characterSrc = devilImage.src;
+        }
+
+        document.querySelector("aside").style.display = 'none';
+        $("body > *:not(#choose):not(#tutorialPart1)").show();
+
+        const character = document.createElement("img");
+        character.src = characterSrc;
+        img1.append(character);
+        character.id = "character1";
+
+        $(character).css({
+            "width": "700px",
+            "height": "700px",
+            "margin-left": "200px",
+            "display": "inline-block",
+        });
+
+        typeWriter(dialogue1, dialogueText, 35);
+    });
 });
 
 ninja.addEventListener("mouseenter", () => {
@@ -56,30 +82,20 @@ devil.addEventListener("mouseleave", () => {
     devil.innerText = "Choose";
 });
 
-Array.from(choose).forEach(button => {
-    button.addEventListener("click", function () {
-        if (this.id === "ninjaButton") {
-            characterSrc = ninjaImage.src;
-        } else if (this.id === "toughButton") {
-            characterSrc = toughImage.src;
-        } else if (this.id === "devilButton") {
-            characterSrc = devilImage.src;
-        }
+const colors = ["blue", "green", "magenta", "red"]
+let colorIndex = 0
+function nextBtnColorCycle() {
+    next1.style.backgroundColor = colors[colorIndex]
+    colorIndex = (colorIndex + 1) % colors.length
+}
+setInterval(nextBtnColorCycle, 1000)
 
-        document.querySelector("aside").style.display = 'none';
-        $("body > *:not(aside)").show();
-
-        const character = document.createElement("img");
-        character.src = characterSrc;
-        img1.append(character);
-        character.id = "character1";
-
-        $(character).css({
-            "width": "700px",
-            "height": "700px",
-            "margin-left": "200px",
-        });
-    });
-});
-
+function startTutorial() {
+    $("#game").hide()
+    $("#tutorialText1").show()
+}
+$("#next1").on("click", function () {
+    startTutorial()
+    
+})
 
